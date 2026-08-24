@@ -1,0 +1,13 @@
+THE BROKER — App Review Notes (PUBLIC EDITION v6.0)
+
+• Category / nature: Educational simulation game.
+• The app does NOT provide real securities trading, brokerage, investment advisory, portfolio management, account connection, deposits/withdrawals, or purchase links.
+• All companies, security identifiers, fundamentals, prices, dividends, drawdowns, and portfolio results shown in gameplay are fictional/game-model data. No real company logos or real stock codes are used.
+• The customer personas are fictional and the user is not asked to enter their own real financial circumstances.
+• “Low suitability” is a game mechanic measuring fit with a fictional customer profile; it is not a rating or recommendation regarding any real issuer or security.
+• Historical macro context is general educational summary only.
+• No account system, advertising SDK, analytics SDK, tracking SDK, or external data transmission is implemented in the current build. Game state and audio preferences are stored locally on device.
+• A first-launch disclosure and an in-app Legal & Privacy screen explain these points.
+
+Suggested App Store description lead:
+“架空の顧客と架空企業を使い、顧客適合性・分散・リスク管理を学ぶ教育シミュレーションゲーム。実取引・投資助言機能はありません。”

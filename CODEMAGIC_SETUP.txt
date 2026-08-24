@@ -1,0 +1,24 @@
+Codemagic設定値（コピペ用）
+============================
+
+CodemagicのApple Developer Portal integration名:
+THE_BROKER_ASC
+
+Bundle ID:
+com.kuwada.thebroker
+
+App name:
+THE BROKER
+
+iOS distribution type:
+app_store
+
+Xcode scheme:
+App
+
+初回version:
+1.0.0
+
+codemagic.yamlはRepository直下に置いてあります。
+最初のworkflowはApp Store Connectへビルドをアップロードしますが、
+自動でApp Store審査提出はしません。

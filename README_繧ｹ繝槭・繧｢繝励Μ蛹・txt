@@ -1,0 +1,20 @@
+THE BROKER — PUBLIC EDITION / App Store Build Project
+=====================================================
+
+このプロジェクトは THE BROKER PUBLIC EDITION をCapacitor 8でiOS/Androidアプリ化するためのものです。
+
+iPhone版は、所有者がMacを持っていなくてもCodemagicのクラウドMacでビルドできます。
+詳しい手順は START_HERE_WINDOWS.txt を開いてください。
+
+主要ファイル:
+- www/index.html              ゲーム本体
+- capacitor.config.ts        Capacitor設定
+- codemagic.yaml             iOSクラウドビルド/App Store Connect設定
+- assets/logo.png            ネイティブアイコン/スプラッシュ生成元
+- privacy_policy.html        プライバシーポリシー
+- terms_of_use.html          利用規約
+- APP_REVIEW_NOTES.txt       Apple審査メモ案
+- START_HERE_WINDOWS.txt     Macなしでの公開手順
+
+Bundle ID: com.kuwada.thebroker
+Version: 1.0.0

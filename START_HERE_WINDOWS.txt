@@ -1,0 +1,82 @@
+THE BROKER — MacなしでiPhoneアプリ化する手順
+==============================================
+
+このフォルダは THE BROKER PUBLIC EDITION を、Windowsから
+GitHub → Codemagic（クラウドMac）→ App Store Connect に送るための完成プロジェクトです。
+
+アプリ名: THE BROKER
+Bundle ID: com.kuwada.thebroker
+初回バージョン: 1.0.0
+
+【あなたのPCにMac/Xcodeは不要】
+iOSのコンパイルと署名はCodemagic上のMacで行います。
+
+------------------------------
+STEP 1  Apple側で新しいアプリを作る
+------------------------------
+1. Apple Developer / App Store Connectへログイン
+2. Identifiersで Bundle ID「com.kuwada.thebroker」を登録
+3. App Store Connect > マイApp > ＋ > 新規App
+4. 名前: THE BROKER
+5. Bundle ID: com.kuwada.thebroker
+6. SKU: THEBROKER001 など任意の一意な文字列
+
+※ Bundle IDがすでに使用済みなら、別のIDに変更してください。
+   その場合は capacitor.config.ts と codemagic.yaml の両方を同じIDに変更します。
+
+------------------------------
+STEP 2  GitHubにこのフォルダをアップロード
+------------------------------
+1. GitHubで新しいRepositoryを作成（例: the-broker-app）
+2. このフォルダの中身をRepositoryの一番上にアップロード
+3. codemagic.yaml がRepository直下にあることを確認
+
+------------------------------
+STEP 3  CodemagicとAppleを接続
+------------------------------
+1. Codemagicへログイン
+2. GitHubを接続し、the-broker-app を追加
+3. Codemagic Team settings > Developer Portal を開く
+4. App Store Connect API Keyを登録
+5. Codemagic内でのキー表示名を必ず
+      THE_BROKER_ASC
+   にする
+
+Apple側のAPI Keyは App Store Connect > Users and Access > Integrations から作成できます。
+権限はApp Managerを推奨。
+
+6. Codemagic > Code signing identities で Apple Distribution 証明書と
+   App Store用Provisioning Profileを用意する。
+   API Key接続後はCodemagic側からFetch/Generateできます。
+
+------------------------------
+STEP 4  iPhone版をビルド
+------------------------------
+1. Codemagicで THE BROKER のアプリを開く
+2. codemagic.yaml を認識させる
+3. Workflow「THE BROKER - iOS / App Store Connect」を選択
+4. Start new build
+
+成功すると、署名済みIPAが作られ、App Store Connectへアップロードされます。
+Macは不要です。
+
+------------------------------
+STEP 5  TestFlight
+------------------------------
+App Store Connect > THE BROKER > TestFlight でビルド処理完了を待ち、
+内部テスターに自分を追加すればiPhoneへインストールして実機テストできます。
+
+------------------------------
+App Store公開前に必要
+------------------------------
+- プライバシーポリシーをWeb上に公開し、URLをApp Store Connectへ登録
+- App Storeスクリーンショット
+- アプリ説明文 / キーワード / カテゴリ
+- 年齢レーティング
+- App Privacy回答
+- APP_REVIEW_NOTES.txt の内容を参考に審査メモを入力
+- 実機でBGM、効果音、スクロール、保存、法務画面を確認
+
+【重要】
+このプロジェクトはコードとクラウドビルド設定まで用意済みですが、
+Apple Developerの署名情報やApp Store Connectの登録操作は本人のAppleアカウントで行う必要があります。

@@ -1,0 +1,23 @@
+{
+  "name": "the-broker-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "THE BROKER PUBLIC EDITION - educational portfolio proposal simulation game",
+  "scripts": {
+    "sync": "npx cap sync",
+    "add:ios": "npx cap add ios",
+    "add:android": "npx cap add android",
+    "assets": "npx @capacitor/assets generate",
+    "ios": "npx cap open ios",
+    "android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.5.0",
+    "@capacitor/ios": "8.5.0",
+    "@capacitor/android": "8.5.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.0",
+    "@capacitor/assets": "3.0.5"
+  }
+}
