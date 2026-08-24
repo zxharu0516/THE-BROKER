@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>THE BROKER｜サポート</title>
+  <meta name="description" content="THE BROKERの公式サポートページ。遊び方、不具合時の確認事項、アプリの位置づけ、免責事項をご案内します。" />
+  <style>
+    :root{
+      --bg:#071725;
+      --panel:#0d2233;
+      --panel2:#102b3d;
+      --line:#24465f;
+      --text:#f5f7fb;
+      --muted:#9fb1c2;
+      --gold:#e5b94f;
+      --green:#6dd8b3;
+      --shadow:0 18px 50px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(31,78,110,.22), transparent 35%),
+        linear-gradient(180deg,#081928 0%,#06131f 100%);
+      color:var(--text);
+      line-height:1.8;
+    }
+    a{color:#a8d9ff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 64px}
+    .hero{
+      border:1px solid var(--line);
+      background:linear-gradient(145deg,rgba(13,34,51,.96),rgba(8,24,37,.96));
+      border-radius:24px;
+      padding:30px;
+      box-shadow:var(--shadow);
+    }
+    .brand{display:flex;align-items:center;gap:18px}
+    .logo{
+      width:64px;height:64px;border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(145deg,#f0d06a,#b88925);
+      color:#101820;font-weight:900;font-size:23px;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.35);
+    }
+    h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:0}
+    .sub{color:var(--muted);margin-top:6px}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-top:18px;padding:8px 12px;border-radius:999px;
+      background:rgba(109,216,179,.08);border:1px solid rgba(109,216,179,.35);
+      color:#c9f3e5;font-size:14px
+    }
+    nav{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}
+    nav a{
+      padding:10px 14px;border:1px solid var(--line);border-radius:12px;
+      color:#d9e4ee;background:rgba(255,255,255,.02)
+    }
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+    .card{
+      border:1px solid var(--line);background:rgba(13,34,51,.88);
+      border-radius:20px;padding:24px;box-shadow:var(--shadow)
+    }
+    .card h2{margin:0 0 10px;font-size:22px}
+    .card h3{margin:20px 0 4px;font-size:17px;color:#eef5fb}
+    .muted{color:var(--muted)}
+    .accent{color:var(--gold)}
+    ul{padding-left:1.2em;margin:8px 0}
+    .faq details{
+      border-top:1px solid var(--line);padding:15px 0
+    }
+    .faq details:first-of-type{border-top:0}
+    summary{cursor:pointer;font-weight:700}
+    .notice{
+      border-left:4px solid var(--gold);
+      padding:16px 18px;background:rgba(229,185,79,.07);
+      border-radius:8px;margin-top:16px
+    }
+    .contact-box{
+      background:linear-gradient(145deg,rgba(229,185,79,.07),rgba(13,34,51,.95));
+    }
+    footer{
+      text-align:center;color:#7f95a7;font-size:13px;margin-top:28px
+    }
+    .small{font-size:14px}
+    @media(max-width:720px){
+      .grid{grid-template-columns:1fr}
+      .hero{padding:22px}
+      .card{padding:20px}
+      .brand{align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="brand">
+        <div class="logo">TB</div>
+        <div>
+          <h1>THE BROKER</h1>
+          <div class="sub">教育用・架空銘柄シミュレーション</div>
+        </div>
+      </div>
+
+      <div class="badge">● 公式サポートページ</div>
+
+      <p>
+        THE BROKERをご利用いただきありがとうございます。
+        このページでは、基本的な遊び方、不具合が起きたときの確認事項、
+        アプリの位置づけ・免責事項をご案内します。
+      </p>
+
+      <nav>
+        <a href="#guide">遊び方</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#trouble">不具合時の確認</a>
+        <a href="#about">アプリの位置づけ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </section>
+
+    <section class="grid" id="guide">
+      <article class="card">
+        <h2>遊び方</h2>
+        <p class="muted">架空の顧客条件を読み取り、架空銘柄から提案を組み立てます。</p>
+        <ul>
+          <li>顧客の年齢・資金・投資経験・投資目的・リスク許容度を確認</li>
+          <li>複数の架空銘柄からポートフォリオを作成</li>
+          <li>分散性、リスク適合、配当適合、成長性、顧客要望への一致などで評価</li>
+          <li>ゲーム内で10年間の運用結果を確認</li>
+          <li>評価を積み重ね、キャリアアップを目指す</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>主な機能</h2>
+        <ul>
+          <li>顧客カルテ</li>
+          <li>ポートフォリオ提案</li>
+          <li>提案評価</li>
+          <li>10年間の運用シミュレーション</li>
+          <li>キャリアシステム</li>
+          <li>BGM・効果音のON/OFF</li>
+          <li>進捗リセット</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card faq" id="faq" style="margin-top:18px">
+      <h2>よくある質問</h2>
+
+      <details open>
+        <summary>実際のお金を使いますか？</summary>
+        <p>いいえ。THE BROKERには、証券口座への接続、注文、入出金などの実取引機能はありません。</p>
+      </details>
+
+      <details>
+        <summary>実在する銘柄や株価を使っていますか？</summary>
+        <p>いいえ。企業名、ゲーム内コード、指標、値動き、配当、運用結果などはゲーム用の架空データです。</p>
+      </details>
+
+      <details>
+        <summary>このアプリは投資助言を行いますか？</summary>
+        <p>いいえ。特定の金融商品・銘柄の購入、売却、保有を推奨するものではなく、投資助言・資産運用サービスを提供するものではありません。</p>
+      </details>
+
+      <details>
+        <summary>進捗を最初からやり直せますか？</summary>
+        <p>ホーム画面の「進捗リセット」から、ゲームの進行状況をリセットできます。</p>
+      </details>
+
+      <details>
+        <summary>BGMや効果音を消せますか？</summary>
+        <p>画面上部の「BGM」「効果音」ボタンから、それぞれON/OFFを切り替えられます。</p>
+      </details>
+    </section>
+
+    <section class="grid" id="trouble">
+      <article class="card">
+        <h2>不具合が起きたとき</h2>
+        <p>まず、次の操作をお試しください。</p>
+        <ul>
+          <li>アプリを完全に終了して再起動</li>
+          <li>App Store / TestFlightで最新版になっているか確認</li>
+          <li>iPhone / iPadを再起動</li>
+          <li>通信環境を切り替えて再確認</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>不具合報告にあると助かる情報</h2>
+        <ul>
+          <li>使用端末名</li>
+          <li>iOS / iPadOSのバージョン</li>
+          <li>THE BROKERのバージョン</li>
+          <li>どの画面で起きたか</li>
+          <li>再現手順</li>
+          <li>可能であればスクリーンショット</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" id="about" style="margin-top:18px">
+      <h2>このアプリの位置づけ</h2>
+      <div class="notice">
+        <strong class="accent">THE BROKERは教育・シミュレーション目的のゲームです。</strong>
+        <div class="small">
+          実際の金融商品取引、投資助言、資産運用サービスではありません。
+        </div>
+      </div>
+
+      <h3>架空データについて</h3>
+      <p>
+        登場する企業名、銘柄、コード、株価、PER・PBR・配当率、成長率、値動き、
+        運用結果などはゲーム用に構成された架空データです。
+      </p>
+
+      <h3>実取引機能について</h3>
+      <p>
+        証券口座への接続、注文、入出金、実在銘柄への売買導線はありません。
+      </p>
+
+      <h3>投資判断について</h3>
+      <p>
+        ゲーム内の点数、低適合判定、運用結果は架空ケースに対するゲーム評価です。
+        現実の金融商品の価値・売買時期・投資判断を推奨するものではありません。
+      </p>
+    </section>
+
+    <section class="card contact-box" id="contact" style="margin-top:18px">
+      <h2>お問い合わせ</h2>
+      <p>
+        THE BROKERに関するご意見・不具合報告は、App Storeの商品ページに掲載されている
+        開発者連絡先をご利用ください。
+      </p>
+      <p class="muted small">
+        不具合報告の際は「端末名 / OSバージョン / アプリバージョン / 再現手順」を添えていただけると確認がスムーズです。
+      </p>
+    </section>
+
+    <footer>
+      <div>© 2026 THE BROKER</div>
+      <div>Educational simulation only. No real trading or investment advice.</div>
+    </footer>
+  </main>
+</body>
+</html>
